@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <TextView
-        app:layout_constraintHorizontal_weight="3.33"
         android:id="@+id/view1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -14,108 +13,134 @@
         android:gravity="center"
         android:text="View 1"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/view2"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="20sp"/>
     <TextView
-        app:layout_constraintHorizontal_weight="6.66"
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#FFEB3B"
+        android:background="#6C6205"
         android:gravity="center"
         android:text="View 2"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@id/guideline1"
-        app:layout_constraintLeft_toRightOf="@id/view1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/view3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#4CAF50"
+        android:background="#6C0562"
         android:gravity="center"
         android:text="View 3"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
         app:layout_constraintBottom_toTopOf="@id/view4"
-        app:layout_constraintTop_toTopOf="@+id/guideline1"
-        app:layout_constraintRight_toRightOf="@id/guideline2"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/view4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#560B63"
+        android:background="#05166C"
         android:gravity="center"
         android:text="View 4"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view3"
-        app:layout_constraintBottom_toBottomOf="@id/guideline3"
-        app:layout_constraintRight_toRightOf="@id/guideline2"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@id/guideline1"
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/view5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#7B6E7E"
+        android:background="#05696C"
         android:gravity="center"
         android:text="View 5"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="@id/guideline1"
         app:layout_constraintLeft_toLeftOf="@id/guideline2"
-        app:layout_constraintBottom_toBottomOf="@id/guideline3"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintBottom_toTopOf="@id/view6"
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/view6"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#FF5722"
+        android:background="#0F6C05"
         android:gravity="center"
         android:text="View 6"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="@id/guideline3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/view7"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/view5"
+        app:layout_constraintLeft_toLeftOf="@id/guideline2"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"/>
     <TextView
         android:id="@+id/view7"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#0E2EBA"
+        android:background="#FFEB3B"
         android:gravity="center"
         android:text="View 7"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="@id/guideline3"
-        app:layout_constraintLeft_toRightOf="@id/view6"
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#C32410"
+        android:gravity="center"
+        android:text="View 8"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/view7"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view9"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F44336"
+        android:gravity="center"
+        android:text="View 9"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/view8"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:textSize="20sp"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:orientation="horizontal"
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.5" />
     <androidx.constraintlayout.widget.Guideline
         android:orientation="vertical"
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.2" />
     <androidx.constraintlayout.widget.Guideline
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.75" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
